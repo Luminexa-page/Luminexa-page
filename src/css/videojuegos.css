@@ -1,0 +1,53 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+.image-text {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    top: 5%;
+    font-size: 150%;
+    transition: transform 0.3s ease; /* Transición para el movimiento del contenedor */
+}
+
+.image-text img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10%;
+    padding: 20px;
+    background-color: #333;
+    transition: transform 0.3s ease, padding 0.3s ease, background-color 0.3s ease; /* Transiciones para la imagen */
+}
+
+.image-text:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+    padding: 20px; /* Ajusta el padding de la imagen */
+    background-color: #000; /* Cambia el color del fondo al pasar el ratón */
+}
+
+.image-text:hover {
+    transform: translateY(10px); /* Desplaza el contenedor hacia abajo cuando se pasa el ratón */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px); /* Aumenta el desplazamiento hacia abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.image-text {
+    animation: fadeInUp 2s ease-out forwards; /* Aumenta la duración de la animación */
+}
