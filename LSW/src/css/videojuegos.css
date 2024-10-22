@@ -1,0 +1,134 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+.image-text {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    top: 5%;
+    font-size: 150%;
+    transition: transform 0.3s ease; /* Transición para el movimiento del contenedor */
+}
+
+.image-text img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10%;
+    padding: 20px;
+    background-color: #333;
+    transition: transform 0.3s ease, padding 0.3s ease, background-color 0.3s ease; /* Transiciones para la imagen */
+}
+
+.image-text:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+    padding: 20px; /* Ajusta el padding de la imagen */
+    background-color: #000; /* Cambia el color del fondo al pasar el ratón */
+}
+
+.image-text:hover {
+    transform: translateY(10px); /* Desplaza el contenedor hacia abajo cuando se pasa el ratón */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px); /* Aumenta el desplazamiento hacia abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.image-text {
+    animation: fadeInUp 2s ease-out forwards; /* Aumenta la duración de la animación */
+}
+
+/*BOTON DE DESCARGAR*/
+/* From Uiverse.io by jamik-dev */ 
+.Download-button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 12px 20px;
+    color: white;
+    background: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em rgba(59, 48, 78, 0.527);
+    letter-spacing: 0.05em;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s;
+  }
+  
+  .Download-button svg {
+    margin-right: 8px;
+    width: 25px;
+  }
+  
+  .Download-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #3b82f6;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+  
+  .Download-button:active {
+    box-shadow: 0 0.3em 1em -0.5em #3b82f6;
+  }
+  
+  .Download-button::before {
+    content: "";
+    width: 4px;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    left: 0;
+    transition: all 0.2s;
+  }
+  
+  .Download-button::after {
+    content: "";
+    width: 4px;
+    height: 40%;
+    background-color: white;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    right: 0;
+    transition: all 0.2s;
+  }
+  
+  .Download-button:hover::before,
+  .Download-button:hover::after {
+    height: 60%;
+  }
+  
+  .Download-button:hover::before {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transform: translate(5px, -15px) rotate(45deg);
+  }
+  
+  .Download-button:hover::after {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    transform: translate(-5px, 15px) rotate(45deg);
+  }
+  

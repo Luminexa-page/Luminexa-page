@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminexa Studios</title>
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="icon" href="src/iconos/Logo Luminexa (Sin fondo).png">
+    <script src="src/scripts/index.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a id="nav-home" style="color: #ba9b5b; font-weight: bold;" href="#">Inicio</a></li>
+                <li><a id="nav-videojuegos" href="src/videojuegos.html">Videojuegos</a></li>
+                <li><a id="nav-paginas" href="src/paginas.html">Páginas Web</a></li>
+                <li><a id="nav-nosotros" href="src/nosotros.html">Acerca de nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <a href="index.html" class="logo">
+        <img src="src/images/Logo Luminexa.png" alt="Logo" />
+    </a>
+
+    <main>
+        <section class="hero">
+            <h1 id="main-title" style="font-weight: bold; font-size: 200%;">Luminexa Studios</h1>
+            <h2 id="main-subtitle">Diseñamos páginas web para marcas personales o empresas y creamos videojuegos inmersivos</h2>
+        </section>
+
+        <!-- Sección Páginas Web -->
+        <div class="content-right">
+            <a href="https://tally.so/r/wbLXe7" class="text-button">
+                <div>
+                    <p id="web-custom" class="text-above-button">Páginas Web <br> Personalizadas</p>
+                    <button id="request-page" class="c-button c-button--gooey">Solicita tu Página
+                        <div class="c-button__blobs">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </button>
+                </div>
+            </a>
+            <img src="src/images/website (ejemplo).jpg" alt="Descripción de la imagen" class="image-right">
+        </div>
+        
+
+        <!-- Sección Videojuegos -->
+        <div class="content-left" href="src/videojuegos.html">
+            <div class="text-button1" href="src/videojuegos.html">
+                <p id="games-studio" class="text-above-button1">Videojuegos de <br> Luminexa Studios</p>
+                <a href="src/videojuegos.html">
+                <button id="explore-games" class="c-button c-button--gooey" href="src/videojuegos.html">Explora los juegos
+                    <div class="c-button__blobs">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </button>
+            </a>
+                <svg style="display: block; height: 0; width: 0;" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur result="blur" stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+                            <feColorMatrix result="goo" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" mode="matrix" in="blur"></feColorMatrix>
+                            <feBlend in2="goo" in="SourceGraphic"></feBlend>
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+            <img src="src/images/ejemplo Luminexa.jpg" alt="Descripción de la imagen" class="image-left" href="src/videojuegos.html">
+        </div>
+
+        <!-- Tablón de Noticias -->
+        <div id="tablon-noticias">
+            <h2 id="news-header" style="text-align: center; color: #ba9b5b; font-size: 2rem; margin-bottom: 30px;">Noticias</h2>
+
+            <!--NUEVAS NOTICIAS-->
+
+            <div class="noticia">
+                <a href="src/noticias/luminexa1.html" class="enlace-noticia">
+                    <h3 id="news-1-title">Lanzamiento Pre-Alpha Luminexa</h3>
+                    <p id="news-1-description">1r Lanzamiento de Luminexa Pre-Alpha</p>
+                </a>
+                <span class="fecha-noticia">26/01/2024</span>
+            </div>
+
+            <!--Noticias recurrentes-->
+
+            <div class="noticia" style="display: none;">
+                <a href="src/noticia2.html" class="enlace-noticia">
+                    <h3 id="news-2-title">Noticia 2</h3>
+                    <p id="news-2-description"></p>
+                </a>
+                <span class="fecha-noticia">??/??/????</span>
+            </div>
+            <div class="noticia" style="display: none;">
+                <a href="noticia3.html" class="enlace-noticia">
+                    <h3 id="news-3-title">Noticia 3</h3>
+                    <p id="news-3-description"></p>
+                </a>
+                <span class="fecha-noticia">??/??/????</span>
+            </div>
+
+            <!--FIN NOTICIAS-->
+
+        </div>
+        
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2024 Luminexa Studios</p>
+        <p style="position: absolute; right: 5%; top: 50%; transform: translateY(-50%); margin: 0; font-size: 80%;">v1.0</p>
+    </footer>
+
+</body>
+</html>
