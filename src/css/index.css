@@ -722,16 +722,15 @@ footer p {
 
 
 
-
-
   /* Estilos para el tablón de noticias */
   #tablon-noticias {
-    width: 60%;
-    margin: 70% auto; /* Aumenta el margen superior para crear espacio y evitar superposición */
+    width: 35%;
+    margin: 62.5% auto; /* Aumenta el margen superior para crear espacio y evitar superposición */
     padding: 20px;
     background-color: #1a1a1a; /* Fondo oscuro para el tablón */
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-left: 56%;
 }
 
 .noticia {
