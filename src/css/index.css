@@ -121,7 +121,11 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 75px; /* Espacio entre el botón y la imagen */
+    margin-right: 10px;
+}
+
+.text.pagina {
+    right: 120%;
 }
 
 .text-above-button {
@@ -259,7 +263,7 @@ footer.show {
     flex-direction: row-reverse;
     align-items: center;
     position: absolute;
-    left: 10%; 
+    left:15%; 
     top: 80%; /* Centra verticalmente */
     transform: translateY(-50%); /* Ajuste de la posición vertical */
     max-width: 40%; /* Controla el ancho máximo del contenedor */
@@ -557,7 +561,6 @@ main {
 
 h1 {
     font-size: 3rem;
-    margin-bottom: 20px;
     color: #ba9b5b;
     opacity: 0;
     transform: translateY(-20px);
@@ -698,7 +701,7 @@ p {
 
 footer {
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 10px;
+    padding: 12px;
     text-align: center;
     position: relative;
     color: #fff;
@@ -706,7 +709,7 @@ footer {
 
 footer p {
     margin: 0;
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 
