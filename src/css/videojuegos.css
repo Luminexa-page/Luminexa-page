@@ -10,32 +10,35 @@ main {
 }
 
 .image-text {
-    display: inline-block;
-    text-align: center;
-    font-weight: bold;
-    top: 5%;
-    font-size: 150%;
-    transition: transform 0.3s ease; /* Transición para el movimiento del contenedor */
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  top: 5%;
+  font-size: 150%;
+  transition: transform 0.3s ease; /* Transición para el movimiento del contenedor */
+  pointer-events: none; /* Desactiva la interacción sobre el contenedor */
 }
 
 .image-text img {
-    max-width: 45%;
-    height: auto;
-    border-radius: 10%;
-    padding: 20px;
-    background-color: #333;
-    transition: transform 0.3s ease, padding 0.3s ease, background-color 0.3s ease; /* Transiciones para la imagen */
+  max-width: 45%;
+  height: auto;
+  border-radius: 10%;
+  padding: 20px;
+  background-color: #333;
+  transition: transform 0.3s ease, padding 0.3s ease, background-color 0.3s ease; /* Transiciones para la imagen */
+  pointer-events: all; /* Activa la interacción solo en la imagen */
 }
 
 .image-text:hover img {
-    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
-    padding: 20px; /* Ajusta el padding de la imagen */
-    background-color: #000; /* Cambia el color del fondo al pasar el ratón */
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+  padding: 20px; /* Ajusta el padding de la imagen */
+  background-color: #000; /* Cambia el color del fondo al pasar el ratón */
 }
 
 .image-text:hover {
-    transform: translateY(10px); /* Desplaza el contenedor hacia abajo cuando se pasa el ratón */
+  transform: translateY(10px); /* Desplaza el contenedor hacia abajo cuando se pasa el ratón */
 }
+
 
 @keyframes fadeInUp {
     from {
