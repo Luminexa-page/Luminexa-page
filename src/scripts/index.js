@@ -1,4 +1,5 @@
 // script.js
+// Funcionamiento de el footer
 window.addEventListener('scroll', function() {
     var footer = document.querySelector('footer');
     var scrollPosition = window.scrollY + window.innerHeight;
@@ -11,3 +12,16 @@ window.addEventListener('scroll', function() {
     }
 });
 
+// Boton COPY TO CLIPBOARD de nosotros.html
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.copy').forEach(button => {
+        button.addEventListener('click', () => {
+            const textToCopy = "luminexastudios@outlook.es";
+            if (document.hasFocus()) {
+                navigator.clipboard.writeText(textToCopy)
+            } else {
+                alert("Asegúrate de que la ventana esté activa para copiar.");
+            }
+        });
+    });
+});

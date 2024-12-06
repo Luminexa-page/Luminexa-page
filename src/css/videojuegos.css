@@ -26,13 +26,14 @@ main {
   padding: 20px;
   background-color: #333;
   transition: transform 0.3s ease, padding 0.3s ease, background-color 0.3s ease; /* Transiciones para la imagen */
-  pointer-events: all; /* Activa la interacción solo en la imagen */
+  
 }
 
 .image-text:hover img {
   transform: scale(1.1); /* Aumenta el tamaño de la imagen */
   padding: 20px; /* Ajusta el padding de la imagen */
   background-color: #000; /* Cambia el color del fondo al pasar el ratón */
+  pointer-events: all; /* Activa la interacción solo en la imagen */
 }
 
 .image-text:hover {
@@ -73,6 +74,7 @@ main {
     cursor: pointer;
     position: relative;
     transition: all 0.2s;
+    pointer-events: all; /* Activa la interacción solo en la imagen */
   }
   
   .Download-button svg {
