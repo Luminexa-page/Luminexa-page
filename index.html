@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="notranslate">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luminexa Studios</title>
     <link rel="stylesheet" href="src/css/index.css">
     <link rel="icon" href="src/iconos/Logo Luminexa (Sin fondo).png">
-    <script src="src/scripts/index.js"></script>
+    
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar">
             <ul>
-                <li><a id="nav-home" style="color: #ba9b5b; font-weight: bold;" href="#">Inicio</a></li>
+                <li><a id="nav-home" style="color: #ba9b5b; font-weight: bold;" href="#"><strong>Inicio</strong></a></li>
                 <li><a id="nav-videojuegos" href="src/videojuegos.html">Videojuegos</a></li>
                 <li><a id="nav-paginas" href="src/paginas.html">Páginas Web</a></li>
                 <li><a id="nav-nosotros" href="src/nosotros.html">Acerca de nosotros</a></li>
@@ -20,8 +20,27 @@
         </nav>
     </header>
 
+    <label for="theme" class="theme">
+        <span class="theme__toggle-wrap">
+            <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark" checked>
+            <span class="theme__fill"></span>
+            <span class="theme__icon">
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+                <span class="theme__icon-part"></span>
+            </span>
+        </span>
+    </label>
+    
+
     <a href="index.html" class="logo">
-        <img src="src/images/Logo Luminexa.png" alt="Logo" />
+        <img id="logo" src="src/images/Logo Luminexa (Blanco).png" alt="Logo"/>
     </a>
 
     <main>
@@ -102,10 +121,14 @@
     </main>
     
     <footer id="footer">
-        <p>&copy; 2024 Luminexa Studios</p>
-        <p style="position: absolute; right: 5%; font-size: 110%; top: 1px;">v1.0.2</p>
+        <p id="copyright" style="position: relative; top: -20px;">&copy; 2024 Luminexa Studios</p>
+        <p id="version" style="position: absolute; right: 5%; font-size: 110%; top: 1px;">v1.0.3</p>
     </footer>
+
+    <div id="decorative-frame"></div>
 
     
 </body>
 </html>
+
+<script src="src/scripts/index.js"></script>
