@@ -116,7 +116,7 @@ body {
     }
 }
 
-.button {
+.button1 {
     -moz-appearance: none;
     -webkit-appearance: none;
     appearance: none;
@@ -137,8 +137,8 @@ body {
 }
 
 /* Resto del estilo original */
-.button::before,
-.button::after {
+.button1::before,
+.button1::after {
   content: '';
   display: block;
   position: absolute;
@@ -149,36 +149,36 @@ body {
   transition: all .15s ease;
 }
 
-.button::before {
+.button1::before {
   top: 0;
   border-bottom-width: 0;
 }
 
-.button::after {
+.button1::after {
   bottom: 0;
   border-top-width: 0;
 }
 
-.button:active,
-.button:focus {
+.button1:active,
+.button1:focus {
   outline: none;
 }
 
-.button:active::before,
-.button:active::after {
+.button1:active::before,
+.button1:active::after {
   right: 3px;
   left: 3px;
 }
 
-.button:active::before {
+.button1:active::before {
   top: 3px;
 }
 
-.button:active::after {
+.button1:active::after {
   bottom: 3px;
 }
 
-.button_lg {
+.button1_lg {
   position: relative;
   display: block;
   padding: 10px 20px;
@@ -188,7 +188,7 @@ body {
   box-shadow: inset 0px 0px 0px 1px transparent;
 }
 
-.button_lg::before {
+.button1_lg::before {
   content: '';
   display: block;
   position: absolute;
@@ -199,7 +199,7 @@ body {
   background-color: #0f1923;
 }
 
-.button_lg::after {
+.button1_lg::after {
   content: '';
   display: block;
   position: absolute;
@@ -211,7 +211,7 @@ body {
   transition: all .2s ease;
 }
 
-.button_sl {
+.button1_sl {
   display: block;
   position: absolute;
   top: 0;
@@ -223,18 +223,18 @@ body {
   transition: all .2s ease;
 }
 
-.button_text {
+.button1_text {
   position: relative;
 }
 
-.button:hover {
+.button1:hover {
   color: #0f1923;
 }
 
-.button:hover .button_sl {
+.button1:hover .button_sl {
   width: calc(100% + 15px);
 }
 
-.button:hover .button_lg::after {
+.button1:hover .button_lg::after {
   background-color: #fff;
 }
