@@ -137,3 +137,69 @@ main {
     transform: translate(-5px, 15px) rotate(45deg);
   }
   
+
+
+
+
+
+
+
+
+
+
+  .juegos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin: 40px 0;
+}
+.juego {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+.juego-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.juego-imagen {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-right: 25px;
+}
+.juego-info h2 {
+    font-size: 2em;
+    margin: 0;
+    color: #ba9b5b;
+}
+.juego-botones {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+.btn-dorado {
+    font-size: 1.2em;
+    color: #ba9b5b;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #ba9b5b;
+    border-radius: 8px;
+    padding: 8px 16px;
+}
+.btn-dorado:hover {
+    background-color: #ba9b5b;
+    color: #fff;
+}
+.juego.izquierda {
+    justify-content: flex-start;
+    text-align: left;
+    margin-left: 40%;
+}
+.juego.derecha {
+    justify-content: flex-end;
+    text-align: right;
+    margin-left: 5%;
+}
