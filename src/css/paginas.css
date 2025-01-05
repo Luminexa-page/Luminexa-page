@@ -9,7 +9,7 @@ html, body {
 
 
 body {
-    background-image: url("../images/cielo.jpg"); /* Retrocede una carpeta */
+    background-image: url("../images/cielo.png"); /* Retrocede una carpeta */
     background-size: cover; /* La imagen cubrirá todo el body */
     background-repeat: no-repeat; /* La imagen no se repetirá */
     background-position: center; /* Centra la imagen */
