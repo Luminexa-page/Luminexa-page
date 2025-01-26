@@ -170,7 +170,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     width: 100%;
     bottom: 0;
     transform: translateY(100%); /* Empuja el footer fuera de la vista */
@@ -558,10 +558,6 @@ h2 {
   
 
 /* Estilos principales */
-main {
-    text-align: center;
-    padding-bottom: 95%;
-}
 
 h1 {
     font-size: 3rem;
@@ -1052,4 +1048,3 @@ footer p {
     justify-content: center;
     align-items: center;
   }
-  
