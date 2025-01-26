@@ -1,0 +1,1050 @@
+ /* Estilos generales */
+
+/*FOTOS IDIOMA ELEGIR*/
+.flag-container {
+    display: flex;
+    gap: 10px;
+}
+.flag {
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+
+img {
+    transition: opacity 3s ease; /* Suaviza el cambio de la imagen */
+}
+
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Fondo muy negro */
+
+    user-select: none;
+    -webkit-user-select: none; /* Para navegadores WebKit (Chrome, Safari) */
+    -moz-user-select: none;    /* Para Firefox */
+    -ms-user-select: none;     /* Para Internet Explorer y Edge */
+
+    transition: background-color 0.3s ease, color 0.3s ease; /* Suaviza los cambios */
+}
+a {
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+header {
+    background-color: #444444; /* Gris más claro para la barra de navegación */
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.logo img {
+    width: 30%; /* Ajusta el tamaño del logo */
+    height: 50%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #555555; /* Gris un poco más oscuro al hacer hover */
+    border-radius: 5px;
+}
+
+main {
+    text-align: center;
+    color: #fff; /* Texto blanco para contraste */
+}
+
+.noticia {
+    position: relative;
+    padding-right: 100px; /* Ajusta según sea necesario */
+}
+
+.fecha-noticia {
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    font-size: 1rem;
+    color: #c5c5c5; /* Puedes personalizar el color */
+}
+
+
+/* Estilo del contenedor principal */
+.content-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Alinea el contenido hacia la derecha */
+    position: absolute;
+    right: 10%; /* Ajusta la posición desde la derecha */
+    top: 25%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajuste de la posición vertical */
+    max-width: 40%; /* Controla el ancho máximo del contenedor */
+
+    border-radius: 10px; /* Bordes redondeados */
+    margin-top: 0;
+}
+
+/* Estilo del contenedor de texto y botón */
+.text-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3em;
+    text-decoration: none;
+}
+
+.text.pagina {
+    right: 120%;
+}
+
+.text-above-button {
+    color: #fff;
+    margin-bottom: 2.5em; /* Espacio entre el texto y el botón */
+    margin-right: 2em;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.action-button {
+    padding: 20px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #777; /* Color de fondo al pasar el ratón */
+}
+
+.image-right {
+    max-width: 100%;
+    border-radius: 30px;
+    background-color: #333; /* Color de fondo del contenedor */
+    padding: 20px;
+}
+
+
+footer {
+    background-color: #444444; /* Gris más claro para el footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(100%); /* Empuja el footer fuera de la vista */
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Añade transición */
+}
+
+footer.show {
+    transform: translateY(0); /* Trae el footer a la vista */
+    opacity: 1;
+}
+
+/* From Uiverse.io by dpaulos6 */ 
+.c-button {
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0.9em 1.6em;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .c-button--gooey {
+    color: #ba9b5b;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 4px solid #06c8d9;
+    position: relative;
+    transition: all 700ms ease;
+    border-radius: 999px;
+  }
+  
+  .c-button--gooey .c-button__blobs {
+    height: 100%;
+    filter: url(#goo);
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -3px;
+    right: -1px;
+    z-index: -1;
+    border-radius: 20px;
+  }
+  
+  .c-button--gooey .c-button__blobs div {
+    background-color: #06c8d9;
+    width: 34%;
+    height: 100%;
+    border-radius: 100%;
+    position: absolute;
+    transform: scale(1.4) translateY(125%) translateZ(0);
+    transition: all 700ms ease;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(1) {
+    left: -5%;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(2) {
+    left: 30%;
+    transition-delay: 60ms;
+  }
+  
+  .c-button--gooey .c-button__blobs div:nth-child(3) {
+    left: 66%;
+    transition-delay: 25ms;
+  }
+  
+  .c-button--gooey:hover {
+    color: #fff;
+  }
+  
+  .c-button--gooey:hover .c-button__blobs div {
+    transform: scale(1.4) translateY(0) translateZ(0);
+  }
+
+  /* Asegúrate de incluir esto en tu archivo CSS */
+.image-left, .image-right {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añade transición para la transformación y sombra */
+}
+
+.image-left:hover, .image-right:hover {
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen ligeramente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra suave */
+}
+
+
+  .content-left {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: absolute;
+    left:12.5%; 
+    top: 90%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajuste de la posición vertical */
+    max-width: 40%; /* Controla el ancho máximo del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+
+    margin-left: 10%;
+}
+.text-button1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 75px; /* Espacio entre el botón y la imagen */
+}
+.text-above-button1 {
+    color: #fff;
+    margin-bottom: 40px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.action-button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #777;
+}
+
+.image-left {
+    max-width: 100%;
+    
+    border-radius: 30px;
+    background-color: #333; /* Color de fondo del contenedor */
+    padding: 20px;
+}
+
+/*Nuevas Decoraciones*/
+/* Añadir animación fade-in desde la derecha */
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Añadir animación fade-in desde la izquierda */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Aplicar la animación al primer div (fade-in desde la derecha) */
+.content-right {
+    animation: fadeInRight 1s ease-out forwards;
+    opacity: 0; /* Asegurarse de que esté inicialmente invisible */
+}
+
+/* Aplicar la animación al segundo div (fade-in desde la izquierda) */
+.content-left {
+    animation: fadeInLeft 1s ease-out forwards;
+    opacity: 0; /* Asegurarse de que esté inicialmente invisible */
+}
+
+
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .logo {
+        position: static;
+        margin-bottom: 10px;
+    }
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.taglines {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards; /* Efecto de desvanecimiento al cargar */
+}
+
+.card {
+    margin: 0 10px;
+    padding: 30px;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    width: 250px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    backdrop-filter: blur(5px);
+    opacity: 0; /* Iniciar con las cartas ocultas */
+}
+
+/* Animaciones para cada tarjeta */
+.card:nth-child(1) {
+    animation: slideFromLeft 1s ease-out forwards; /* Carta izquierda desde la izquierda */
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(2) {
+    animation: slideFromBottom 1s ease-out forwards; /* Carta central desde abajo */
+    animation-delay: 0.4s;
+}
+
+.card:nth-child(3) {
+    animation: slideFromRight 1s ease-out forwards; /* Carta derecha desde la derecha */
+    animation-delay: 0.2s;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-image: url("../iconos/Logo Luminexa (Sin fondo).png");
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 15px;
+    z-index: 0;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover::before {
+    opacity: 0.25;
+}
+
+.card p {
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.card:hover p {
+    color: #e0f7fa;
+}
+
+/* Animaciones */
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-100%); /* Comienza fuera del contenedor por la izquierda */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); /* Llega a su posición final */
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromRight {
+    from {
+        transform: translateX(100%); /* Comienza fuera del contenedor por la derecha */
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); /* Llega a su posición final */
+        opacity: 1;
+    }
+}
+
+@keyframes slideFromBottom {
+    from {
+        transform: translateY(100%); /* Comienza desde abajo */
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0); /* Llega a su posición final */
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bn30 {
+    border: 5em;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+    background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+    padding: 0.7em 2em;
+    border-radius: 65px;
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.438);
+    -webkit-transition: box-shadow 0.25s;
+    transition: box-shadow 0.25s;
+    color: white;
+  }
+  
+  .bn30 .text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #4568dc, #b06ab3);
+  }
+  
+  .bn30:after {
+    content: "";
+    border-radius: 18px;
+    position: absolute;
+    margin: 4px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: #0e0e10;
+  }
+  
+  .bn30:hover {
+    background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+    box-shadow: 0 12px 24px rgba(128, 128, 128, 0.1);
+  }
+  
+  .bn30:hover .text {
+    background-image: linear-gradient(-45deg, #4568dc, #b06ab3);
+  }
+
+  
+
+/* Estilos principales */
+
+h1 {
+    font-size: 3rem;
+    color: #ba9b5b;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1s forwards;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s forwards;
+}
+ 
+.section h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.5s forwards;
+}
+
+/* Cartas */
+.cards1 {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 2s forwards;
+    perspective: 1000px;
+}
+
+.card1 {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    width: 300px;
+    height: 580px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    backface-visibility: hidden;
+    overflow: hidden; /* Para el efecto de doblez */
+}
+
+.card1:hover {
+    transform: translateY(-15px) rotateX(5deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Simulación del pliegue en la esquina superior derecha */
+.card1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+    transform-origin: top right;
+    transform: rotate(-45deg);
+    z-index: 1; /* Asegurar que quede sobre la carta */
+}
+
+/* Simulación de borde y sombra en el pliegue */
+.card1::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
+    transform-origin: top right;
+    transform: rotate(-45deg) translate(5px, -5px);
+    z-index: 0; /* Para dar un efecto de sombra bajo el pliegue */
+}
+
+/* Decoración adicional en los bordes como si fuera una carta física */
+.card1 {
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Borde más notable */
+    background-image: radial-gradient(circle at top left, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.1)); /* Leve degradado en el fondo */
+}
+
+/* Decoración de las cartas */
+.card1 .icon {
+    font-size: 3rem; 
+    color: #ba9b5b;
+    position: absolute;
+    top: 5%;
+}
+
+.card1 .icon-bottom {
+    font-size: 2.5rem;
+    color: #ba9b5b;
+    position: absolute;
+    bottom: 5%;
+}
+
+/* Texto de las cartas */
+.card1 p {
+    margin: 0;
+    line-height: 1.8;
+    color: #fff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.card1:hover p {
+    color: #e0f7fa;
+    transform: translateY(-5px);
+}
+
+
+
+/* Animaciones */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 12px;
+    text-align: center;
+    color: #fff;
+
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Estilos para el tablón de noticias */
+  #tablon-noticias {
+    width: 50%;
+    position: absolute;
+    top: 148% ;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    left: 42.5%;
+}
+
+.noticia {
+    background-color: #2a2a2a;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.noticia:hover {
+    background-color: #333;
+}
+
+.noticia h3 {
+    color: #ba9b5b; /* Título dorado */
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.noticia p {
+    color: #fff;
+    font-size: 1rem;
+}
+
+.enlace-noticia {
+    text-decoration: none;
+    color: inherit; /* Mantiene el color del texto */
+}
+
+
+
+
+
+
+
+
+
+/*BOTON MODO CLARO
+/* From Uiverse.io by JkHuger */ 
+
+.theme {
+    display: inline-block; /* Ajusta según el diseño */
+    align-items: center;
+    -webkit-tap-highlight-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 2.5%;
+    cursor: pointer;
+}
+
+
+.theme__fill,
+.theme__icon {
+    transition: 0.3s;
+}
+
+.theme__fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.theme__icon,
+.theme__toggle {
+    z-index: 1;
+}
+
+.theme__icon,
+.theme__icon-part {
+    position: absolute;
+}
+
+.theme__icon {
+    display: block;
+    top: 35%;
+    left: 0.01em;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.theme__icon-part {
+    border-radius: 50%;
+    box-shadow: 0.4em -0.4em 0 0.5em hsl(0,0%,100%) inset;
+    top: calc(50% - 0.5em);
+    left: calc(50% - 0.5em);
+    width: 1em;
+    height: 1em;
+    transition: box-shadow var(--transDur) ease-in-out,
+          opacity var(--transDur) ease-in-out,
+          transform var(--transDur) ease-in-out;
+    transform: scale(0.5);
+}
+
+.theme__icon-part ~ .theme__icon-part {
+    background-color: hsl(0,0%,100%);
+    border-radius: 0.05em;
+    top: 50%;
+    left: calc(50% - 0.05em);
+    transform: rotate(0deg) translateY(0.5em);
+    transform-origin: 50% 0;
+    width: 0.1em;
+    height: 0.2em;
+}
+
+.theme__icon-part:nth-child(3) {
+    transform: rotate(45deg) translateY(0.45em);
+}
+
+.theme__icon-part:nth-child(4) {
+    transform: rotate(90deg) translateY(0.45em);
+}
+
+.theme__icon-part:nth-child(5) {
+    transform: rotate(135deg) translateY(0.45em);
+}
+
+.theme__icon-part:nth-child(6) {
+    transform: rotate(180deg) translateY(0.45em);
+}
+
+.theme__icon-part:nth-child(7) {
+    transform: rotate(225deg) translateY(0.45em);
+}
+
+.theme__icon-part:nth-child(8) {
+    transform: rotate(270deg) translateY(0.5em);
+}
+
+.theme__icon-part:nth-child(9) {
+    transform: rotate(315deg) translateY(0.5em);
+}
+
+.theme__label,
+.theme__toggle,
+.theme__toggle-wrap {
+    position: relative;
+}
+
+.theme__toggle,
+.theme__toggle:before {
+    display: block;
+}
+
+.theme__toggle {
+    background-color: hsl(48,90%,85%);
+    border-radius: 25% / 50%;
+    box-shadow: 0 0 0 0.125em var(--primaryT);
+    padding: 0.25em;
+    width: 6em;
+    height: 3em;
+    -webkit-appearance: none;
+    appearance: none;
+    transition: background-color var(--transDur) ease-in-out,
+          box-shadow 0.15s ease-in-out,
+          transform var(--transDur) ease-in-out;
+}
+
+.theme__toggle:before {
+    background-color: hsl(48,90%,55%);
+    border-radius: 50%;
+    content: "";
+    width: 2.5em;
+    height: 2.5em;
+    transition: 0.3s;
+}
+
+.theme__toggle:focus {
+    box-shadow: 0 0 0 0.125em var(--primary);
+    outline: transparent;
+}
+
+/* Checked */
+.theme__toggle:checked {
+    background-color: hsl(198,90%,15%);
+}
+
+.theme__toggle:checked:before,
+.theme__toggle:checked ~ .theme__icon {
+    transform: translateX(3em);
+}
+
+.theme__toggle:checked:before {
+    background-color: hsl(198,90%,55%);
+}
+
+.theme__toggle:checked ~ .theme__fill {
+    transform: translateX(0);
+}
+
+.theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(1) {
+    box-shadow: 0.2em -0.2em 0 0.2em hsl(0,0%,100%) inset;
+    transform: scale(1);
+    top: 0.2em;
+    left: -0.2em;
+}
+
+.theme__toggle:checked ~ .theme__icon .theme__icon-part ~ .theme__icon-part {
+    opacity: 0;
+}
+
+.theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(2) {
+    transform: rotate(45deg) translateY(0.8em);
+}
+
+.theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(3) {
+    transform: rotate(90deg) translateY(0.8em);
+}
+
+.theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(4) {
+    transform: rotate(135deg) translateY(0.8em);
+}
+
+.theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(5) {
+    transform: rotate(180deg) translateY(0.8em);
+}
+
+.theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(6) {
+    transform: rotate(225deg) translateY(0.8em);
+}
+
+.theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(7) {
+    transform: rotate(270deg) translateY(0.8em);
+}
+
+.theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(8) {
+    transform: rotate(315deg) translateY(0.8em);
+}
+
+.theme__toggle:checked ~ .theme__icon .theme__icon-part:nth-child(9) {
+    transform: rotate(360deg) translateY(0.8em);
+}
+
+.theme__toggle-wrap {
+    margin: 0 0.75em;
+}
+
+@supports selector(:focus-visible) {
+    .theme__toggle:focus {
+        box-shadow: 0 0 0 0.125em var(--primaryT);
+    }
+
+    .theme__toggle:focus-visible {
+        box-shadow: 0 0 0 0.125em var(--primary);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*MARCO DECORATIVO*/
+#decorative-frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5px; /* Ancho del marco */
+    height: 0%; /* Alto inicial del marco */
+    background-color: #ba9b5b; /* Color del marco */
+    z-index: 9999;
+    transition: height 0.3s ease; /* Suaviza el cambio de altura */
+}
+
+
+
+
+
+
+
+/*BOTONES REDES*/
+/* From Uiverse.io by McHaXYT */ 
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .button {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2d2e32;
+    border: 2px solid #2d2e32;
+    transition: all 0.45s;
+  }
+  
+  .button:hover {
+    transform: rotate(360deg);
+    transform-origin: center center;
+    background-color: #ffff;
+    color: #2d2e32;
+  }
+  
+  .button:hover .btn-svg {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg)
+      brightness(103%) contrast(103%);
+  }
+  
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
