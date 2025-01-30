@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luminexa - IA</title>
     <link rel="stylesheet" href="../css/index.css">
-    <link rel="icon" href="src/iconos/Logo Luminexa (Sin fondo).png">
+    <link rel="icon" href="../iconos/Logo Luminexa (Sin fondo).png">
     
 </head>
 <body>
@@ -27,7 +27,7 @@
         <img id="logo" src="../images/Logo Luminexa (Blanco).png" alt="Logo"/>
     </a>
 
-    <main style="padding-bottom: 20%;">
+    <main style="padding-bottom: 0%;">
         <section class="hero">
             <h1 id="main-title" style="font-weight: bold; font-size: 180%;">Pagina en Pruebas</h1>
             <h2 id="main-subtitle" style="font-size: 100%;">Consola de Programa en Pruebas</h2>
@@ -51,7 +51,7 @@
                 overflow: hidden;
             }
             .output {
-                height: 500px;
+                height: 400px;
                 overflow-y: auto;
                 padding: 10px;
                 font-family: monospace;
@@ -83,7 +83,7 @@
                 background: #008fe8;
             }
             hr {
-                border: 1px solid #ba9b5b; /* Color dorado */
+                border: 0.2px solid #ba9b5b; /* Color dorado */
                 margin: 10px 0; /* Espaciado vertical alrededor de la línea */
             }
         </style>
@@ -107,7 +107,7 @@
             const outputDiv = document.getElementById('output');
 
             window.onload = function () {
-                addOutput('LUMA - v0.0.1'); // VERSION MAS RECIENTE DE LUMA
+                addOutput(`LUMA - ${version}`);
             };
     
             function runCommand() {
@@ -135,7 +135,7 @@
     
                 outputDiv.appendChild(paragraph); // Añadimos el párrafo al contenedor
 
-                paragraph.style.fontSize = '150%'; // Ajustamos el tamaño de la fuente
+                paragraph.style.fontSize = '130%'; // Ajustamos el tamaño de la fuente
 
                 outputDiv.scrollTop = outputDiv.scrollHeight; // Desplaza hacia abajo automáticamente
             }
