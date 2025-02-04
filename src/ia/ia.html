@@ -6,7 +6,6 @@
     <title>Luminexa - IA</title>
     <link rel="stylesheet" href="../css/index.css">
     <link rel="icon" href="../iconos/Logo Luminexa (Sin fondo).png">
-    
 </head>
 <body>
     <header class="header">
@@ -16,12 +15,10 @@
                 <li><a id="nav-videojuegos" href="../videojuegos.html">Games</a></li>
                 <li><a id="nav-paginas" href="../paginas.html">Web Pages</a></li>
                 <li><a id="nav-nosotros" href="../nosotros.html">About Us</a></li>
-
-                <li><a id="nav-ia" href="src/ia/ia.html" style="margin-left: 200%; color: #ba9b5b; font-weight: bold;"">C</a></li>
+                <li><a id="nav-ia" href="src/ia/ia.html" style="margin-left: 200%; color: #ba9b5b; font-weight: bold;">C</a></li>
             </ul>
         </nav>
     </header>
-    
 
     <a href="../../index.html" class="logo">
         <img id="logo" src="../images/Logo Luminexa (Blanco).png" alt="Logo"/>
@@ -32,7 +29,7 @@
             <h1 id="main-title" style="font-weight: bold; font-size: 180%;">Pagina en Pruebas</h1>
             <h2 id="main-subtitle" style="font-size: 100%;">Consola de Programa en Pruebas</h2>
         </section>
-    
+
         <style>
             .console-wrapper {
                 display: flex;
@@ -42,7 +39,7 @@
                 width: 100%;
             }
             .console-container {
-                width: 120%;
+                width: 100%;
                 max-width: 75%;
                 background: #1e1e1e;
                 color: #f4f4f4;
@@ -87,11 +84,9 @@
                 margin: 10px 0; /* Espaciado vertical alrededor de la línea */
             }
         </style>
-        
-    
+
         <br><br>
 
-    <body>
         <div class="console-wrapper">
             <div class="console-container">
                 <div class="output" id="output"></div>
@@ -101,38 +96,39 @@
                 </div>
             </div>
         </div>
-    
+
         <script src="ia.js"></script>
         <script>
             const outputDiv = document.getElementById('output');
+            const inputField = document.getElementById('command');
+            let commandHistory = []; // Para almacenar los comandos ejecutados
+            let historyIndex = -1; // Para rastrear la posición actual en el historial
 
             window.onload = function () {
                 addOutput(`LUMA - ${version}`);
             };
-    
+
             function runCommand() {
-                const input = document.getElementById('command');
-                const command = input.value.trim();
-    
+                const command = inputField.value.trim();
+
                 if (command) {
-                    /*addOutput(`> ${command}`); // Muestra el comando ingresado*/ //BLOQUEADO TEMPORALMENTE
-    
                     // Simula el procesamiento del comando
                     try {
-                        const result = ia(command); // Llama a una función definida en tu programa
+                        const result = ia(command); // Llama a la función de IA
                         addOutput(result !== undefined ? result : 'Comando ejecutado.');
+                        commandHistory.push(command); // Guarda el comando en el historial
+                        historyIndex = commandHistory.length; // Resetea el índice a la última posición
                     } catch (error) {
                         addOutput(`Error: ${error.message}`);
                     }
                 }
-    
-                input.value = ''; // Limpia el campo de entrada
+
+                inputField.value = ''; // Limpia el campo de entrada
             }
-    
+
             function addOutput(text) {
                 const paragraph = document.createElement('p');
                 paragraph.innerHTML = text;  // Usamos innerHTML para que el HTML se procese correctamente
-    
                 outputDiv.appendChild(paragraph); // Añadimos el párrafo al contenedor
 
                 paragraph.style.fontSize = '130%'; // Ajustamos el tamaño de la fuente
@@ -140,31 +136,43 @@
                 outputDiv.scrollTop = outputDiv.scrollHeight; // Desplaza hacia abajo automáticamente
             }
 
-
-    
             // Permite usar Enter para ejecutar comandos
-            document.getElementById('command').addEventListener('keydown', function(event) {
-            if (event.key === 'Enter') {
-                const outputDiv = document.getElementById('output');
-        
-            // Verificar si el último elemento es una línea horizontal
-                if (outputDiv.lastElementChild && outputDiv.lastElementChild.tagName === 'HR') {
-                    runCommand(); // Ejecutar el comando sin añadir una nueva línea
-                    return;
-                }
+            inputField.addEventListener('keydown', function(event) {
+                if (event.key === 'Enter') {
+                    const outputDiv = document.getElementById('output');
+            
+                    // Verificar si el último elemento es una línea horizontal
+                    if (outputDiv.lastElementChild && outputDiv.lastElementChild.tagName === 'HR') {
+                        runCommand(); // Ejecutar el comando sin añadir una nueva línea
+                        return;
+                    }
 
-            // Crear una línea horizontal (<hr>) antes de ejecutar el comando
-            const line = document.createElement('hr');
-            outputDiv.appendChild(line); // Añadir la línea horizontal al contenedor
-        
-            runCommand(); // Ejecutar el comando
-            }
-        });
+                    // Crear una línea horizontal (<hr>) antes de ejecutar el comando
+                    const line = document.createElement('hr');
+                    outputDiv.appendChild(line); // Añadir la línea horizontal al contenedor
+            
+                    runCommand(); // Ejecutar el comando
+                } else if (event.key === 'ArrowUp') {
+                    // Permite al usuario navegar hacia atrás en el historial de comandos
+                    if (historyIndex > 0) {
+                        historyIndex--;
+                        inputField.value = commandHistory[historyIndex];
+                    }
+                } else if (event.key === 'ArrowDown') {
+                    // Permite al usuario avanzar hacia adelante en el historial de comandos
+                    if (historyIndex < commandHistory.length - 1) {
+                        historyIndex++;
+                        inputField.value = commandHistory[historyIndex];
+                    } else {
+                        inputField.value = ''; // Si se llega al final del historial, limpia el campo
+                    }
+                }
+            });
         </script>
 
         <div id="decorative-frame"></div>
-
     </main>
+</body>
 </html>
 
 <script src="../scripts/index.js"></script>
