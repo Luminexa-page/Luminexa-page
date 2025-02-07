@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es" class="notranslate">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminexa Insight</title>
+    <link rel="stylesheet" href="src/css/Insight.css">
+    <link rel="stylesheet" href="src/css/index.css">
+    <link rel="icon" href="src/iconos/Logo Luminexa (Sin fondo).png">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" style="display: none;"><strong>Inicio</strong></a></li>
+                <li><a href="src/videojuegos.html" style="display: none;">Games</a></li>
+                <li><a href="src/paginas.html" style="display: none;">Web Pages</a></li>
+                <li><a href="src/nosotros.html" style="display: none;">About Us</a></li>
+                <li><a href="Insight.html" style="color: #ba9b5b; font-weight: bold;">Luminexa Insight</a></li>
+            </ul>
+        </nav>
+    </header>
+    <a href="index.html" class="logo">
+        <img id="logo" src="src/images/Logo Luminexa (Blanco).png" alt="Logo Luminexa"/>
+    </a>
+    
+
+    <main>
+        <section class="hero">
+            <h1>Luminexa Insight</h1>
+            <p>Explorando la historia y la geopolítica actual</p>
+        </section>
+
+        <section class="about">
+            <h2>¿Qué es Luminexa Insight?</h2>
+            <p>Luminexa Insight es una iniciativa para producir videos sobre historia y geopolítica.</p>
+        </section>
+
+        <section class="geopolitics">
+            <h2>Geopolítica</h2>
+            <p style="font-size: 1.2em;">Analizamos el contexto geopolítico mundial, explicando conflictos, relaciones internacionales y tendencias globales.</p>
+            <br>
+            <section style="font-size: 0.5em;">
+                <p><strong>Conflictos Actuales:</strong> </p> <p> Profundizamos en las tensiones internacionales como en Oriente medio, Ucrania, China, India y mas.</p>
+            </section>
+            
+            
+        </section>
+
+        <section class="history">
+            <h2>Historia</h2>
+            <p>Exploramos eventos históricos clave y su impacto en la actualidad.</p>
+            
+            <p><strong>Guerras Mundiales:</strong> </p> <p>  Análisis de la Primera y Segunda Guerra Mundial.</p>
+            <p><strong>Historia Moderna:</strong> </p> <p>  Cambios en el siglo XXI.</p>
+            
+        </section>
+
+        <section class="featured-videos">
+            <h2>Videos Destacados</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="decorative-frame"></div>
+</body>
+</html>
+
+<script>
+    window.addEventListener('scroll', function() {
+        const frame = document.getElementById('decorative-frame');
+        if (!frame) return;
+    
+        const scrollHeight = window.scrollY;
+        const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+    
+        const height = ((scrollHeight / documentHeight) * 100) + "%";
+        frame.style.height = height;
+    });
+</script>
+    

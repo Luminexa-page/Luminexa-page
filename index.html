@@ -12,12 +12,14 @@
     <header class="header">
         <nav class="navbar">
             <ul>
-                <li><a id="nav-home" style="color: #ba9b5b; font-weight: bold;" href="#"><strong>Luminexa</strong></a></li>
+                <li><a id="nav-home" style="color: #ba9b5b; font-weight: bold;" href="#"><strong>Inicio</strong></a></li>
                 <li><a id="nav-videojuegos" href="src/videojuegos.html">Games</a></li>
                 <li><a id="nav-paginas" href="src/paginas.html">Web Pages</a></li>
                 <li><a id="nav-nosotros" href="src/nosotros.html">About Us</a></li>
 
-                <li><a id="nav-ia" href="src/ia/ia.html" style="margin-left: 200%;">C</a></li>
+                <li><a id="nav-ia" href="src/ia/ia.html" style="margin-left: 200%; display: none;">C</a></li>
+
+                <li><a id="nav-nosotros" href="Insight.html" style="border-color: #ba9b5b; border: 5px;">Luminexa Insight</a></li>
             </ul>
         </nav>
     </header>
@@ -45,7 +47,7 @@
         <img id="logo" src="src/images/Logo Luminexa (Blanco).png" alt="Logo"/>
     </a>
 
-    <main style="padding-bottom: 90%;">
+    <main style="padding-bottom: 100%;">
         <section class="hero">
             <h1 id="main-title" style="font-weight: bold; font-size: 180%;">Luminexa</h1>
             <h2 id="main-subtitle" style="font-size: 100%;">Diseñamos páginas web para marcas personales o empresas y creamos videojuegos inmersivos</h2>
@@ -56,13 +58,25 @@
                 <div class="text-pagina">
                     <p id="web-custom" class="text-above-button">Páginas Web <br> Personalizadas</p>
                     <a href="src/paginas.html" class="text-button">
-                    <button id="request-page" class="c-button c-button--gooey">Solicita tu Página
+
+                      <button id="request-page" class="c-button c-button--gooey">Solicita tu Página
                         <div class="c-button__blobs">
                             <div></div>
                             <div></div>
                             <div></div>
                         </div>
                     </button>
+
+                    <br>
+                    <a href="src/ia/ia.html" class="text-button">
+                    <button id="request-page" class="c-button c-button--gooey1">Prueba nuestro Chatbot
+                        <div class="c-button__blobs">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </button>
+                  </a>
                     </a>
                 </div>
             <img src="src/images/website (ejemplo).png" alt="Descripción de la imagen" class="image-right">
@@ -101,6 +115,15 @@
             <h2 id="news-header" style="text-align: center; color: #ba9b5b; font-size: 2rem; margin-bottom: 30px;">Noticias</h2>
 
             <!--NUEVAS NOTICIAS-->
+
+            <div class="noticia">
+              <a href="src/ia/ia.html" class="enlace-noticia">
+                  <h3 id="news-1-title">Prototipo LUMA</h3>
+                  <p id="news-1-description">Prototipo de chatbot LUMA disponible</p>
+              </a>
+              <span class="fecha-noticia">06/02/2025</span>
+          </div>
+
             <div class="noticia">
                 <a href="src/noticias/luminexa1.html" class="enlace-noticia">
                     <h3 id="news-1-title">Lanzamiento Pre-Alpha Luminexa</h3>
@@ -305,7 +328,7 @@
     </div>
         <!--FIN BOTONES REDES FIN-->
 
-        <p id="version" style="position: absolute; right: 5%; font-size: 110%; top: 20px;">v1.1.0.1</p>
+        <p id="version" style="position: absolute; right: 5%; font-size: 110%; top: 20px;">v1.2.0</p>
     </footer>
 
     <div id="decorative-frame"></div>
