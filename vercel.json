@@ -1,9 +1,5 @@
 {
-  "rewrites": [
-    { "source": "/luminexa", "destination": "/public/index.html" },
-    { "source": "/Insight", "destination": "/public/Insight.html" },
-    { "source": "/nosotros", "destination": "/public/nosotros.html" },
-    { "source": "/paginas", "destination": "/public/paginas.html" },
-    { "source": "/videojuegos", "destination": "/public/videojuegos.html" }
-  ]
+  "cleanUrls": true
 }
+
+
