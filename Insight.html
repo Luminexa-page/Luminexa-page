@@ -19,12 +19,15 @@
                 <li><a href="Insight.html" style="color: #ba9b5b; font-weight: bold;">Luminexa Insight</a></li>
             </ul>
         </nav>
+        <style>
+            p {
+                max-width: 1000px;
+            }
+        </style>
     </header>
-    <a href="index.html" class="logo">
+    <a href="Insight.html" class="logo">
         <img id="logo" src="src/images/Logo Luminexa (Blanco).png" alt="Logo Luminexa"/>
     </a>
-    
-
     <main>
         <section class="hero">
             <h1>Luminexa Insight</h1>
@@ -33,37 +36,104 @@
 
         <section class="about">
             <h2>¿Qué es Luminexa Insight?</h2>
-            <p>Luminexa Insight es una iniciativa para producir videos sobre historia y geopolítica.</p>
+            <p>Luminexa Insight busca mejorar la comprensión de la historia y la geopolítica, proporcionando análisis claros y accesibles sobre los acontecimientos que han dado forma al mundo. A través de un enfoque dinámico y reflexivo y los procesos históricos que influyen en la sociedad actual.</p>
         </section>
 
         <section class="geopolitics">
             <h2>Geopolítica</h2>
-            <p style="font-size: 1.2em;">Analizamos el contexto geopolítico mundial, explicando conflictos, relaciones internacionales y tendencias globales.</p>
+            <p>Analizamos el contexto geopolítico mundial, explicando conflictos, relaciones internacionales y tendencias globales.</p>
             <br>
             <section style="font-size: 0.5em;">
-                <p><strong>Conflictos Actuales:</strong> </p> <p> Profundizamos en las tensiones internacionales como en Oriente medio, Ucrania, China, India y mas.</p>
-            </section>
-            
-            
+                <p><strong>Conflictos Actuales:</strong> </p> <p> Profundizamos en las tensiones internacionales en regiones como Oriente medio, Ucrania, China, Corea y mas.</p>
         </section>
 
-        <section class="history">
-            <h2>Historia</h2>
-            <p>Exploramos eventos históricos clave y su impacto en la actualidad.</p>
-            
-            <p><strong>Guerras Mundiales:</strong> </p> <p>  Análisis de la Primera y Segunda Guerra Mundial.</p>
-            <p><strong>Historia Moderna:</strong> </p> <p>  Cambios en el siglo XXI.</p>
-            
-        </section>
+        <section class="content-boxes">
+            <h2>Explora Nuestro Contenido</h2>
 
-        <section class="featured-videos">
-            <h2>Videos Destacados</h2>
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
-                <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+            <br>
+
+            <div class="box-container">
+                <div class="box">
+                    <a href="public/blogs/sahara-occidental.html">
+                        <img src="./public/iblog/banderas/sahara.png" alt="bandera-sahara" class="bandera">
+                        <img src="public/iblog/saharamapa.svg.png" alt="sahara-occidental">
+                        <h3>Conflicto Saharaui</h3>
+                        <p>Explora que esta pasando en la ex-colonia española del Sahara</p>
+                    </a>
+                </div>
+                <div class="box" style="display: none;">
+                    <a href="src/contenido2.html">
+                        <img src="src/images/contenido2.jpg" alt="Contenido 2">
+                        <h3>Historia Moderna</h3>
+                        <p>Análisis de eventos clave del siglo XXI.</p>
+                    </a>
+                </div>
+                <div class="box" style="display: none;">
+                    <a href="src/contenido3.html">
+                        <img src="src/images/contenido3.jpg" alt="Contenido 3">
+                        <h3>Relaciones Internacionales</h3>
+                        <p>Exploramos las dinámicas entre potencias globales.</p>
+                    </a>
+                </div>
             </div>
         </section>
+        
+        <style>
+            .content-boxes {
+                text-align: center;
+                padding: 2em;
+            }
+            .box-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+            .box {
+                width: 300px;
+                border: 1px solid #ccc;
+                border-radius: 10px;
+                overflow: hidden;
+                transition: transform 0.3s;
+                position: relative;
+            }
+            .box:hover {
+                transform: scale(1.10);
+            }
+            .box img:not(.bandera) {
+                width: 100%;
+                height: 180px;
+                object-fit: cover;
+                display: block;
+            }
 
+            .box h3 {
+                font-size: 130%;
+                margin: 10px;
+            }
+            .box p {
+                font-size: 120%;
+                margin: 10px;
+            }
+            .box a {
+                text-decoration: none;
+                color: inherit;
+                display: block;
+            }
+            .bandera {
+                width: 80px;
+                height: auto;
+                position: absolute;
+                top: 2.5px;
+                right: 2.5px;
+                z-index: 2;
+            }
+
+
+
+        </style>
+        
+        <br><br>
     </main>
 
     <div id="decorative-frame"></div>
