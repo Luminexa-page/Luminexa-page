@@ -1,9 +1,10 @@
 {
-    "rewrites": [
-    { "source": "/Luminexa", "destination": "/src/index.html" },
-      { "source": "/nosotros", "destination": "/src/nosotros.html" },
-      { "source": "/paginas", "destination": "/src/paginas.html" },
-      { "source": "/videojuegos", "destination": "/src/videojuegos.html" }
-    ]
-  }
-  
+  "routes": [
+    { "source": "/luminexa", "destination": "/index.html" },
+    { "source": "/Insight", "destination": "/Insight.html" },
+
+    { "src": "/nosotros", "dest": "/src/nosotros.html" },
+    { "src": "/paginas", "dest": "/src/paginas.html" },
+    { "src": "/videojuegos", "dest": "/src/videojuegos.html" }
+  ]
+}
