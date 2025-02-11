@@ -1,10 +1,10 @@
 {
-  "routes": [
+  "rewrites": [
     { "source": "/luminexa", "destination": "/index.html" },
     { "source": "/Insight", "destination": "/Insight.html" },
-
-    { "src": "/nosotros", "dest": "/src/nosotros.html" },
-    { "src": "/paginas", "dest": "/src/paginas.html" },
-    { "src": "/videojuegos", "dest": "/src/videojuegos.html" }
+    
+    { "source": "/nosotros", "destination": "/nosotros.html" },
+    { "source": "/paginas", "destination": "/paginas.html" },
+    { "source": "/videojuegos", "destination": "/videojuegos.html" }
   ]
 }
