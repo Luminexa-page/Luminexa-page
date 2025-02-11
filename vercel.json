@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+    { "source": "/Luminexa", "destination": "/src/index.html" },
+      { "source": "/nosotros", "destination": "/src/nosotros.html" },
+      { "source": "/paginas", "destination": "/src/paginas.html" },
+      { "source": "/videojuegos", "destination": "/src/videojuegos.html" }
+    ]
+  }
+  
