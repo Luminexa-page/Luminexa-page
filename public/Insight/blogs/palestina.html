@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es" class="notranslate">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminexa Insight</title>
+    <link rel="stylesheet" href="../../css/Insight.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="icon" href="../../iconos/Logo Luminexa (Sin fondo).png">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="" style="display: none;"><strong>Inicio</strong></a></li>
+                <li><a href="" style="display: none;">Games</a></li>
+                <li><a href="" style="display: none;">Web Pages</a></li>
+
+                <li> <a href="../../Insight.html" style="font-weight: bold;">Volver al menu</li></a> 
+
+                <li><a href="" style="display: none;">About Us</a></li>
+                <li><a >Tiempo de Lectura: ???</a></li> <!--TIEMPO DE LECTURA-->
+            </ul>
+        </nav>
+        <style>
+            .about1 {
+                padding: 40px 40px;
+                max-width: 1500px;
+                margin: auto;
+                text-align: left;
+            }
+            .texto1 {
+                max-width: 2100px;
+                margin: auto;
+                text-align: left;
+            }
+            .titulo1 {
+                font-size: 175%;
+            }
+
+        </style>
+    </header>
+    <a href="../../Insight.html" class="logo">
+        <img id="logo" src="../../iconos/Logo Luminexa (Sin fondo).png" alt="Logo Luminexa"/>
+    </a>
+    <main>
+        <section class="hero">
+            <h1>El conflicto Palestino-Israeli</h1>
+            <p>Entiende el conflicto mas polemico de la historia</p>
+        </section>
+
+        <section class="about1">
+            <h2 class="titulo1">Para entender la actualidad, hay que repasar el pasado</h2>
+            <br>
+            <p class="texto1">
+                
+            </p>
+        </section>
+        
+        <br><br>
+    </main>
+
+    <div id="decorative-frame"></div>
+</body>
+</html>
+
+<script>
+    window.addEventListener('scroll', function() {
+        const frame = document.getElementById('decorative-frame');
+        if (!frame) return;
+    
+        const scrollHeight = window.scrollY;
+        const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
+    
+        const height = ((scrollHeight / documentHeight) * 100) + "%";
+        frame.style.height = height;
+    });
+</script>
+    
