@@ -61,7 +61,6 @@ body {
 
 h2 {
     color: #ba9b5b;
-    margin-bottom: 10px; /* Espacio debajo del título */
 }
 
 h4 {
@@ -81,6 +80,11 @@ h4 {
     height: 275px;
 }
 
-p {
-    line-height: 1.8;
+.updated {
+    position: flex;
+
+    margin: 0;
+    text-align: center;
+    
+    color: #d5d5d5;
 }

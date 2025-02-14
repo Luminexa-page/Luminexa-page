@@ -46,12 +46,12 @@ header {
 .logo {
     position: absolute;
     top: 50px;
-    left: 20px;
+    left: 20px;   
 }
 
 .logo img {
     width: 30%; /* Ajusta el tamaño del logo */
-    height: 50%;
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 .navbar {
