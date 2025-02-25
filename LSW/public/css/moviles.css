@@ -1,0 +1,184 @@
+@media screen and (min-width: 769px) { 
+    .mobile-content {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) { 
+    .desktop-content {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    
+}
+.menu-icon {
+    display: none;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 10px;
+
+    width: auto;
+}
+
+.mobile-menu {
+    display: none;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50px;
+}
+
+.mobile-menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .mobile-menu.show {
+        display: block;
+    }
+
+
+
+    
+
+    /* Reseteo de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+/* Contenedor principal */
+.mobile-content {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Icono del menú */
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/* Menú móvil oculto por defecto */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    padding: 20px;
+    transition: left 0.3s ease;
+}
+
+.mobile-menu a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+/* Botón para cerrar el menú */
+.close-btn {
+    font-size: 30px;
+    color: #fff;
+    text-align: right;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Mostrar el menú cuando está activo */
+.mobile-menu.active {
+    left: 0;
+}
+
+/* Título */
+h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+    color: #fff;
+}
+
+/* Sección de introducción */
+.intro {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #ccc;
+    padding: 10px;
+}
+
+/* Botones de acción */
+.cta-buttons {
+    margin-top: 30px;
+}
+
+.cta-buttons .btn {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+    background-color: #e67e22;
+}
+
+/* Información de contacto */
+.contact-info {
+    margin-top: 40px;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+h4 {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-top: 20px;}
+}
