@@ -48,7 +48,7 @@ function enableDarkMode() {
     document.body.style.backgroundColor = '#000'; // Fondo negro
     document.body.style.color = '#fff'; // Texto blanco
 
-    logo.src = 'public/images/Logo Luminexa (Blanco).png'; // Logo para el modo oscuro
+    logo.src = '../public/images/Logo Luminexa (Blanco).png'; // Logo para el modo oscuro
     subtitle.style.color = '#fff'; // Texto blanco en modo oscuro
     
     webCustomText.forEach(p => {
@@ -88,7 +88,7 @@ function enableLightMode() {
     document.body.style.backgroundColor = '#fff'; // Fondo blanco
     document.body.style.color = '#000'; // Texto negro
 
-    logo.src = 'public/images/Logo Luminexa (Blanco)2.png'; // Logo para el modo claro
+    logo.src = '../public/images/Logo_Luminexa_(Blanco)2.png'; // Logo para el modo claro
     subtitle.style.color = '#003366'; // Texto negro en modo claro
 
     webCustomText.forEach(p => {
