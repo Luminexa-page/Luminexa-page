@@ -1,5 +1,4 @@
 html, body {
-  overflow: hidden; /* Desactiva el scroll vertical y horizontal */
   margin: 0; /* Elimina márgenes para evitar desplazamientos */
   padding: 0; /* Elimina padding innecesario */
   height: 100vh; /* Asegura que el body use toda la altura de la ventana */
@@ -237,4 +236,69 @@ body {
 
 .button1:hover .button_lg::after {
   background-color: #fff;
+}
+
+
+.clientes-section {
+  padding: 50px 20px;
+  background-color: #3a3a3a;
+  text-align: center;
+  color:  #fff;
+}
+
+.clientes-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.clientes-subtitle {
+  font-size: 1.1em;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.clientes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.cliente {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.cliente:hover {
+  transform: translateY(-5px);
+}
+
+.cliente img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.cliente h3 {
+  font-size: 1.2em;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.cliente a {
+  text-decoration: none;
+  color: #ba9b5b;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.cliente a:hover {
+  color: #8b733d;
 }
