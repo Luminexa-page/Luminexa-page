@@ -315,29 +315,15 @@ footer.show {
   }
 
   /* Asegúrate de incluir esto en tu archivo CSS */
-.image-left, .image-right {
+.image-right {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añade transición para la transformación y sombra */
 }
 
-.image-left:hover, .image-right:hover {
+.image-right:hover {
     transform: scale(1.05); /* Aumenta el tamaño de la imagen ligeramente */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra suave */
 }
 
-
-  .content-left {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    position: absolute;
-    left:12.5%; 
-    top: 90%; /* Centra verticalmente */
-    transform: translateY(-50%); /* Ajuste de la posición vertical */
-    max-width: 40%; /* Controla el ancho máximo del contenedor */
-    border-radius: 10px; /* Bordes redondeados */
-
-    margin-left: 10%;
-}
 .text-button1 {
     display: flex;
     flex-direction: column;
@@ -365,14 +351,6 @@ footer.show {
 
 .action-button:hover {
     background-color: #777;
-}
-
-.image-left {
-    max-width: 100%;
-    
-    border-radius: 30px;
-    background-color: #333; /* Color de fondo del contenedor */
-    padding: 20px;
 }
 
 /*Nuevas Decoraciones*/
@@ -1105,47 +1083,3 @@ footer p {
     justify-content: center;
     align-items: center;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* Modo claro */
-body.light-mode {
-    background-color: #fff;
-    color: #000;
-}
-
-/* Modo oscuro */
-body.dark-mode {
-    background-color: #000;
-    color: #fff;
-}
-
-/* Otros estilos que no cambian, solo agregamos clases globales */
-body.light-mode #news-header,
-body.light-mode #news-1-title {
-    color: #003366; /* Azul marino */
-}
-
-body.dark-mode #news-header,
-body.dark-mode #news-1-title {
-    color: #ba9b5b; /* Dorado */
-}
