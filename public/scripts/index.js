@@ -42,6 +42,7 @@ const newsTitle = document.getElementById('news-1-title');
 
 const copyrightText = document.getElementById('copyright');
 const versionText = document.getElementById('version');
+const tablonNoticias = document.getElementById('tablon-noticias');
 
 // Función para activar el modo oscuro
 function enableDarkMode() {
@@ -63,7 +64,6 @@ function enableDarkMode() {
 
 
     imageRight.style.backgroundColor = ' #333'; // Color corcho para el fondo del padding en modo claro
-    imageLeft.style.backgroundColor = ' #333'; // Color corcho para el fondo del padding en modo claro
 
     noticias.forEach(noticia => {
         noticia.style.backgroundColor = '#2a2a2a'; // Azul en modo claro
@@ -81,13 +81,13 @@ function enableDarkMode() {
     document.querySelectorAll('.navbar ul li a').forEach(link => {
         link.style.color = '#fff'; // Blanco
     });
+    
 }
 
 // Función para activar el modo claro
 function enableLightMode() {
     document.body.style.backgroundColor = '#fff'; // Fondo blanco
     document.body.style.color = '#000'; // Texto negro
-
     logo.src = '../public/images/Logo_Luminexa_(Blanco)2.png'; // Logo para el modo claro
     subtitle.style.color = '#003366'; // Texto negro en modo claro
 
@@ -102,7 +102,6 @@ function enableLightMode() {
     document.getElementById('tablon-noticias').style.backgroundColor = '#D1B28C'; // Color corcho (beige)
 
     imageRight.style.backgroundColor = '#D1B28C'; // Color corcho para el fondo del padding en modo claro
-    imageLeft.style.backgroundColor = '#D1B28C'; // Color corcho para el fondo del padding en modo claro
 
     noticias.forEach(noticia => {
         noticia.style.backgroundColor = '#5dade2'; // Azul en modo claro
@@ -120,6 +119,8 @@ function enableLightMode() {
     document.querySelectorAll('.navbar ul li a').forEach(link => {
         link.style.color = '#003366'; // Azul claro
     });
+
+    
 }
 
 // Escuchar los cambios en el checkbox

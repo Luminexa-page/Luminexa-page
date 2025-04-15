@@ -125,7 +125,7 @@ body {
     cursor: pointer;
     position: relative;
     padding: 8px;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 14px;
@@ -239,6 +239,12 @@ body {
 }
 
 
+
+
+
+
+
+
 .clientes-section {
   padding: 50px 20px;
   background-color: #3a3a3a;
@@ -248,13 +254,13 @@ body {
 
 .clientes-section h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 2.5em;
+  font-size: 2.6em;
   color: #ffffff;
   margin-bottom: 10px;
 }
 
 .clientes-subtitle {
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #ffffff;
   margin-bottom: 40px;
 }
@@ -301,4 +307,69 @@ body {
 
 .cliente a:hover {
   color: #8b733d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.reunion-rapida {
+  background-color: #1a1a1a;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  animation: slideUpBlur 1.2s ease-out;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.reunion-contenedor {
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+}
+
+.reunion-contenedor h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2em;
+  margin-bottom: 20px;
+  color: #ba9b5b;
+}
+
+.reunion-contenedor p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.boton-reunion {
+  background-color: #ba9b5b;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+  box-shadow: 0 0 15px rgba(186, 155, 91, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+.boton-reunion:hover {
+  background-color: #8b733d;
+  box-shadow: 0 0 20px rgba(186, 155, 91, 0.7);
+  transform: scale(1.05);
 }

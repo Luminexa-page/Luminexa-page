@@ -24,7 +24,7 @@
         <nav class="navbar">
             <ul>
                 <li><a id="nav-home" style="color: #ba9b5b; font-weight: bold;" href="#"><strong>Inicio</strong></a></li>
-                <li><a id="nav-videojuegos" href="videojuegos.html">Games</a></li>
+                <li><a id="nav-videojuegos" href="videojuegos.html" style="display: none;">Games</a></li>
                 <li><a id="nav-paginas" href="paginas.html">Web Pages</a></li>
                 <li><a id="nav-nosotros" href="nosotros.html">About Us</a></li>
             </ul>
@@ -54,7 +54,7 @@
         <a href="index.html"><img id="logo" src="iconos/Logo Luminexa (Sin fondo).png" alt="Logo" /></a>
     </div>
 
-    <main style="padding-bottom: 100%;">
+    <main style="padding-bottom: 60%;">
         <section class="hero">
             <h1 id="main-title" style="font-weight: bold; font-size: 180%;">Luminexa</h1>
             <h2 id="main-subtitle" style="font-size: 130%;">Diseñamos páginas web para marcas personales o empresas</h2>
@@ -88,42 +88,22 @@
                 </div>
             <img src="images/website (ejemplo).png" alt="Descripción de la imagen" class="image-right">
         </div>
-        
-        <br> <br>
-
-        <!-- Sección Videojuegos -->
-        <div class="content-left" href="videojuegos.html">
-            <div class="text-button1" href="videojuegos.html">
-                <p id="games-studio" class="text-above-button1">Videojuegos de <br> Luminexa</p>
-                <a href="videojuegos.html">
-                <button id="explore-games" class="c-button c-button--gooey" href="videojuegos.html">Explora los juegos
-                    <div class="c-button__blobs">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </button>
-            </a>
-                <svg style="display: block; height: 0; width: 0;" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                        <filter id="goo">
-                            <feGaussianBlur result="blur" stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
-                            <feColorMatrix result="goo" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" mode="matrix" in="blur"></feColorMatrix>
-                            <feBlend in2="goo" in="SourceGraphic"></feBlend>
-                        </filter>
-                    </defs>
-                </svg>
-            </div>
-            <img src="images/ejemplo Luminexa.jpg" alt="Descripción de la imagen" class="image-left" href="videojuegos.html">
-        </div>
 
         <!-- Tablón de Noticias -->
         <div id="tablon-noticias">
-            <h2 id="news-header" style="text-align: center; color: #ba9b5b; font-size: 2rem; margin-bottom: 30px;">Noticias</h2>
+            <h2 id="news-header" style="text-align: center; color: #ba9b5b; font-size: 2rem;">Noticias</h2>
 
             <!--NUEVAS NOTICIAS-->
-
             <div class="noticia">
+              <a href="noticias/luminexa1.html" class="enlace-noticia">
+                  <h3 id="news-1-title">Lanzamiento del minijuego: Luminexa</h3>
+                  <p id="news-1-description">Lanzamiento de Luminexa</p>
+              </a>
+              <span class="fecha-noticia">26/01/2024</span>
+          </div>
+
+          
+            <div class="noticia" style="display: none;">
               <a href="ia/ia.html" class="enlace-noticia">
                   <h3 id="news-1-title">Prototipo LUMA</h3>
                   <p id="news-1-description">Prototipo de chatbot LUMA disponible</p>
@@ -131,13 +111,7 @@
               <span class="fecha-noticia">06/02/2025</span>
           </div>
 
-            <div class="noticia">
-                <a href="noticias/luminexa1.html" class="enlace-noticia">
-                    <h3 id="news-1-title">Lanzamiento Pre-Alpha Luminexa</h3>
-                    <p id="news-1-description">1r Lanzamiento de Luminexa Pre-Alpha</p>
-                </a>
-                <span class="fecha-noticia">26/01/2024</span>
-            </div>
+            
             <!--Noticias recurrentes-->
 
             <div class="noticia" style="display: none;">
@@ -335,7 +309,7 @@
     </div>
         <!--FIN BOTONES REDES FIN-->
 
-        <p id="version" style="position: absolute; right: 5%; font-size: 110%; top: 20px;">v1.4.0</p>
+        <p id="version" style="position: absolute; right: 5%; font-size: 110%; top: 20px;">v2.0.0.0</p>
     </footer>
 
     <div id="decorative-frame"></div>

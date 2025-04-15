@@ -406,11 +406,6 @@ footer.show {
     opacity: 0; /* Asegurarse de que esté inicialmente invisible */
 }
 
-/* Aplicar la animación al segundo div (fade-in desde la izquierda) */
-.content-left {
-    animation: fadeInLeft 1s ease-out forwards;
-    opacity: 0; /* Asegurarse de que esté inicialmente invisible */
-}
 
 
 
@@ -786,12 +781,12 @@ footer p {
   #tablon-noticias {
     width: 50%;
     position: absolute;
-    top: 148% ;
+    top: 90% ;
     padding: 20px;
     background-color: #1a1a1a;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    left: 42.5%;
+    left: 10%;
 }
 
 .noticia {
@@ -1110,3 +1105,47 @@ footer p {
     justify-content: center;
     align-items: center;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Modo claro */
+body.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Otros estilos que no cambian, solo agregamos clases globales */
+body.light-mode #news-header,
+body.light-mode #news-1-title {
+    color: #003366; /* Azul marino */
+}
+
+body.dark-mode #news-header,
+body.dark-mode #news-1-title {
+    color: #ba9b5b; /* Dorado */
+}
