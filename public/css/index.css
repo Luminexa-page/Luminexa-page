@@ -1,5 +1,8 @@
  /* Estilos generales */
-
+  html{
+    overflow-x: hidden;
+  }
+  
 
 
 /*FOTOS IDIOMA ELEGIR*/
